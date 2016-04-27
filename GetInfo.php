@@ -2,11 +2,8 @@
 include 'libraries/Run.php';
 
 $re = StudentToSql('201241402635');
-//var_dump($re);
+
 $DB = new DB_Mysql($CONFIG);
-// var_dump($CONFIG);
-
-
 
 function GetStudent($stu_id){
 	$url            = 'http://xsc.dgut.edu.cn/szcx/Student.asp?Number='.$stu_id;
